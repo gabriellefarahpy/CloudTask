@@ -1,1 +1,1 @@
-# CloudTask. A Scalable, Secure, Asynchronous Job Processing Platform
+# CloudTask: A Scalable, Secure, Asynchronous Job Processing Platform
