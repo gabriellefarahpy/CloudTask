@@ -3,17 +3,16 @@ import uuid
 import json
 from app.redis_client import r
 
-
 router = APIRouter() #new router
-@router.post("/jobs")
 
-def create_job(payload:dict):
+@router.post("/jobs")
+def create_job(payload: dict):
     """Create a job with a unique ID, add it to Redis queue, and store its status"""
     job_id = str(uuid.uuid4()) #generates a unique job ID
     job_data = {
-        "Id":job_id,
+        "Id": job_id,
         "Payload": payload,
-        "Status": "queued" 
+        "Status": "queued"
     }
 
     #Pushing to Redis Queue
