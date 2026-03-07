@@ -1,6 +1,15 @@
+# Python cache and compiled files
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Virtual environments
 venv/
+
+# Environment files
 .env
+
+# Redis / Docker temp data (optional)
+*.db
+*.log
