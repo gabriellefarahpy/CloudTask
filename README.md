@@ -1,4 +1,6 @@
-# CloudTask: A lightweight asynchronous job processing system built with FastAPI and Redis.
+# CloudTask
+
+CloudTask: A lightweight asynchronous job processing system built with FastAPI and Redis.
 
 ## Architecture
 FastAPI API → Redis Queue → Worker Processes
@@ -15,6 +17,8 @@ FastAPI API → Redis Queue → Worker Processes
 - Retry logic for failed jobs
 - Horizontal scaling via multiple workers
 
-## Run Locally
+## Usage
 
+### Run Locally
+```bash
 docker compose up --build
